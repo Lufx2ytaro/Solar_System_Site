@@ -1,0 +1,219 @@
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/images/space.jpg");
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+/* Навигация */
+nav {
+  width: 100%;
+  background-color: #111;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Основной контейнер */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-top: 50px;
+}
+
+/* Блок с текстом */
+.info {
+  width: 40%;
+}
+
+.info h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Солнечная система */
+.solar-system {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+/* Солнце */
+.sun {
+  width: 100px; /* Размер Солнца */
+  height: 100px; /* Размер Солнца */
+ background-image: url("/images/сонце3.jpg");
+  border-radius: 50%; /* Делаем круг */
+  position: absolute; /* Абсолютное позиционирование */
+  top: 42%; /* Центр по вертикали */
+  left: 42%; /* Центр по горизонтали */
+  transform: translate(-50%, -50%); /* Центрируем */
+  box-shadow: 0 0 30px yellow; /* Эффект свечения */
+  animation: rotate 10s linear infinite; /* Анимация вращения */
+  transform-origin: center; /* Устанавливаем точку вращения в центр */
+  animation-play-state: running; /* Устанавливаем начальное состояние анимации */
+}
+
+
+/* Орбиты */
+.orbit {
+  position: absolute;
+  border: 1px dashed white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.mercury-orbit {
+  width: 200px;
+  height: 200px;
+}
+
+.venus-orbit {
+  width: 300px;
+  height: 300px;
+}
+
+.earth-orbit {
+  width: 400px;
+  height: 400px;
+}
+
+.mars-orbit {
+  width: 500px;
+  height: 500px;
+}
+
+.jupiter-orbit {
+  width: 600px;
+  height: 600px;
+}
+
+.saturn-orbit {
+  width: 600px;
+  height: 600px;
+}
+
+/* Планеты */
+.planet {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% -50%; /* Центр вращения */
+  animation: orbit linear infinite;
+  animation-play-state: running; /* Устанавливаем начальное состояние анимации */
+}
+
+/*Делаем отдельный класс под Юпитер тк он Больше*/
+
+.planet_Jupiter {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% -50%; /* Центр вращения */
+  animation: orbit 12s linear infinite;
+  animation-play-state: running; /* Начальное состояние анимации */
+  
+}
+
+.mercury {
+  background-image: url("/images/mercury.jpg");
+  --orbit-radius: 100px;
+  animation-duration: 4s;
+  box-shadow: 0 0 30px yellow;
+  
+}
+
+.venus {
+  background-image: url("/images/Venus.jpg");
+  --orbit-radius: 150px;
+  animation-duration: 10s;
+  box-shadow: 0 0 30px rgb(255, 0, 174);
+}
+
+.earth {
+  background-image: url("/images/Earth.jpg");
+  --orbit-radius: 200px;
+  animation-duration: 8s;
+  box-shadow: 0 0 30px rgb(2, 196, 250);
+}
+
+.mars {
+  background-image: url("/images/Mars.jpg");
+  --orbit-radius: 250px;
+  animation-duration: 9s;
+  box-shadow: 0 0 30px rgb(255, 30, 0);
+}
+
+.jupiter {
+  background-image: url("/images/jupiter.png");
+  --orbit-radius: 310px;
+  animation-duration: 20s;
+  box-shadow: 0 0 30px rgb(255, 255, 255);
+}
+
+
+
+/* Анимация орбит */
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(var(--orbit-radius)) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(var(--orbit-radius)) rotate(-360deg);
+  }
+}
+
+.stop-rotation {
+  animation: none; /* Отключаем анимацию */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.neonText{
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+

@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  background-color: #111;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.neonText {
+  text-shadow: 0px 0px 10px rgb(255, 185, 106);
+}
+
+body {
+  margin: 0;
+  background-image: url("/images/JupiterTheme.jpg");
+  background-size: cover; /* Заполняет весь фон */
+  background-position: center; /* Центрирует фон */
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.info {
+  width: 40%;
+  padding: 20px; /* Добавим отступы */
+  display: flex;
+  flex-direction: column; /* Позволяет размещать элементы вертикально */
+  justify-content: center; /* Центрирует текст по вертикали */
+}
+
+.info h1 {
+  font-size: 36px;
+  margin-bottom: 20px; /* Увеличим отступ */
+  text-align: center; /* Центрируем заголовок */
+}
+
+.info p {
+  font-size: 24px; /* Уменьшили размер шрифта для лучшего восприятия */
+  line-height: 1.6;
+  text-align: justify; /* Выравнивание текста по ширине */
+  margin-bottom: 20px; /* Добавим отступ снизу */
+}
+
+.planet-info {
+  flex: 1; /* Занимает оставшееся пространство */
+  padding: 20px;
+}
+
+#3d-container {
+  width: 50%; /* Занимает 50% ширины */
+  height: 100%; /* Занимает 100% высоты */
+  background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон для 3D-контейнера */
+  display: flex; /* Позволяет позиционировать содержимое по центру */
+  align-items: center; /* Центрирует по вертикали */
+  justify-content: center; /* Центрирует по горизонтали */
+  border-radius: 10px; /* Закругляем углы */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Добавим тень */
+}
+

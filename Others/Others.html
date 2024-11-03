@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Others</title>
+  <link rel="stylesheet" href="styleOther.css">
+</head>
+<body>
+  <nav>
+    <a href="/SolarSystem.html">Home</a>
+    <a href="/test/test.html">Test</a>
+    <a href="/Others/Others.html">Others</a>
+  </nav>
+
+  <section id="social">
+    <h2>Мой Telegram</h2>
+    <a href="https://t.me/Lufx2ytaro" target="_blank">Перейти в Telegram</a>
+  </section>
+
+  <section id="media">
+    <h2>Видео</h2>
+    <div class="media-item">
+      <iframe width="560" height="316" src="https://rutube.ru/play/embed/80b25068876a0a23642aa5e2fb0a9a09/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </div>
+
+    <h2>Музыка</h2>
+    <div class="media-item">
+      <!-- Добавляем аудиоплеер -->
+      <audio id="audio-player" controls>
+        Ваш браузер не поддерживает проигрывание музыки.
+      </audio>
+      
+      <!-- Кнопки для выбора трека -->
+      <div class="music-controls">
+        <button onclick="playAudio('/Others/music/Трава_У_Дома.mp3')">Трава у дома</button>
+        <button onclick="playAudio('/Others/music/USSR - Our Dream - Sovietwave Mix.mp3')">USSR - Our Dream</button>
+        <button onclick="playAudio('/Others/music/Hans_Zimmer_-_Interstellar_Theme_Song_71652021.mp3')">Interstellar Theme</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="wiki-links">
+    <h2>Ссылки на интересные статьи</h2>
+    <ul>
+      <li><a href="https://ru.wikipedia.org/wiki/Солнечная_система" target="_blank">Солнечная система</a></li>
+      <li><a href="https://ru.wikipedia.org/wiki/Солнце" target="_blank">Солнце</a></li>
+      <li><a href="https://ru.wikipedia.org/w/index.php?go=Перейти&search=галактика&title=Служебная%3AПоиск&ns0=1" target="_blank">Галактика</a></li>
+    </ul>
+  </section>
+
+  <script src="/Others/jsOthers.js"></script>
+
+</body>
+</html>

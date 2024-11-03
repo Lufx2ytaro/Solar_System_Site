@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-image: url("/images/space.jpg");
+}
+
+nav {
+  width: 100%;
+  background-color: #111;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+h2 {
+  margin-top: 20px;
+  color: #333;
+  text-align: center;
+}
+
+#social, #media, #wiki-links {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  background-color: rgba(169, 255, 232, 0.69);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.media-item {
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+button {
+  display: block;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.photo-gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.photo-gallery img {
+  width: 100px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

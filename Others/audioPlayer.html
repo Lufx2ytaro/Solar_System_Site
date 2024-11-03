@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Player</title>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <audio id="audio-player" controls>
+    <source id="audio-source" src="" type="audio/mp3">
+    Ваш браузер не поддерживает проигрывание музыки.
+  </audio>
+
+  <script>
+    // Функция для смены трека
+    function playAudio(url) {
+      const audioPlayer = document.getElementById("audio-player");
+      const audioSource = document.getElementById("audio-source");
+      audioSource.src = url;
+      audioPlayer.load();
+      audioPlayer.play();
+    }
+
+    // Остановить текущий трек перед воспроизведением нового
+    window.addEventListener("message", (event) => {
+      if (event.data.type === "play-audio") {
+        playAudio(event.data.url);
+      }
+    });
+  </script>
+</body>
+</html>

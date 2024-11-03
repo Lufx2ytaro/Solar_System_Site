@@ -28,7 +28,7 @@ nav a:hover {
 
 body {
   margin: 0;
-  background-image: url("/images/EarthTheme.jpg");
+  background-image: url("../../images/EarthTheme.jpg");
   background-size: cover; /* Заполняет весь фон */
   background-position: center; /* Центрирует фон */
   color: rgb(255, 255, 255);

@@ -29,7 +29,7 @@ nav a:hover {
 
 body {
   margin: 0;
-  background-image: url("/images/SunTheme.jpg");
+  background-image: url("../../images/SunTheme.jpg");
   background-size: cover; /* Заполняет весь фон */
   background-position: center; /* Центрирует фон */
   color: white;

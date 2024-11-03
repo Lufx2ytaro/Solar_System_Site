@@ -28,7 +28,7 @@ nav a:hover {
 
 body {
   margin: 0;
-  background-image: url("/images/Sun4Mercury.jpg");
+  background-image: url("../../images/Sun4Mercury.jpg");
   background-size: cover; /* Заполняет весь фон */
   background-position: center; /* Центрирует фон */
   color: white;

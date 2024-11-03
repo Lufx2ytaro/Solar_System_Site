@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("/images/space.jpg");
+  background-image: url("images/space.jpg");
   color: white;
   font-family: Arial, sans-serif;
   display: flex;
@@ -70,7 +70,7 @@ nav a:hover {
 .sun {
   width: 100px; /* Размер Солнца */
   height: 100px; /* Размер Солнца */
- background-image: url("/images/сонце3.jpg");
+ background-image: url("images/сонце3.jpg");
   border-radius: 50%; /* Делаем круг */
   position: absolute; /* Абсолютное позиционирование */
   top: 42%; /* Центр по вертикали */
@@ -153,7 +153,7 @@ nav a:hover {
 }
 
 .mercury {
-  background-image: url("/images/mercury.jpg");
+  background-image: url("images/mercury.jpg");
   --orbit-radius: 100px;
   animation-duration: 4s;
   box-shadow: 0 0 30px yellow;
@@ -161,28 +161,28 @@ nav a:hover {
 }
 
 .venus {
-  background-image: url("/images/Venus.jpg");
+  background-image: url("images/Venus.jpg");
   --orbit-radius: 150px;
   animation-duration: 10s;
   box-shadow: 0 0 30px rgb(255, 0, 174);
 }
 
 .earth {
-  background-image: url("/images/Earth.jpg");
+  background-image: url("images/Earth.jpg");
   --orbit-radius: 200px;
   animation-duration: 8s;
   box-shadow: 0 0 30px rgb(2, 196, 250);
 }
 
 .mars {
-  background-image: url("/images/Mars.jpg");
+  background-image: url("images/Mars.jpg");
   --orbit-radius: 250px;
   animation-duration: 9s;
   box-shadow: 0 0 30px rgb(255, 30, 0);
 }
 
 .jupiter {
-  background-image: url("/images/jupiter.png");
+  background-image: url("images/jupiter.png");
   --orbit-radius: 310px;
   animation-duration: 20s;
   box-shadow: 0 0 30px rgb(255, 255, 255);

@@ -68,3 +68,31 @@ button:hover {
     text-align: center;
     font-size: 18px;
 }
+@media (max-width: 768px) {
+  /* Адаптированные стили для мобильных устройств */
+  
+  body {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .solar-system {
+    width: 90%;
+    height: auto;
+  }
+
+  .planet, .planet_Jupiter {
+    width: 10px; /* или подходящий размер для мобильных устройств */
+    height: 10px;
+  }
+}

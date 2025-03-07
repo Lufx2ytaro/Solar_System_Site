@@ -32,7 +32,7 @@ body {
   background-size: cover; /* Заполняет весь фон */
   background-position: center; /* Центрирует фон */
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
 }
 
 .container {
